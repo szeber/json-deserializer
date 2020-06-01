@@ -1,0 +1,35 @@
+{
+    "name": "yapep/json-deserializer",
+    "description": "Library for deserializing JSON data into PHP object",
+    "minimum-stability": "stable",
+    "license": "BSD",
+    "authors": [
+        {
+            "name": "Zsolt Szeberenyi"
+        },
+        {
+            "name": "Laszlo Fodor"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.16.3",
+        "nesbot/carbon": "^2.35.0"
+    },
+    "suggest": {
+        "nesbot/carbon": "Allows using the CarbonRule"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yapep\\JsonDeserializer\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Yapep\\JsonDeserializer\\Test\\": "test"
+        }
+    }
+}
